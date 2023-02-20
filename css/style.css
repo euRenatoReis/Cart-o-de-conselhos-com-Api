@@ -1,0 +1,166 @@
+
+body{
+
+    font-family: 'Manrope', sans-serif;
+    color: var(--text-color);
+    display: flex;
+    background-color: var(--background-color);
+}
+
+.card{
+
+   display: flex;
+   
+   height: 300px;
+   width: 400px;
+   transform: translate(500px, 250px);
+   flex-wrap: wrap;
+   border-radius: 20px;
+   justify-content: center;
+   gap: 10px;
+   padding: 10px;
+   background-color: var(--advice-card-color);
+}
+
+.text{
+
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   gap: 50px;
+   transform: translatey(20px);
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+   height: 200px;
+   text-align: center;
+   justify-content: center;
+}
+
+.text h1{
+
+    color: var(--advice-dice-color);
+    transform: translatey(20px);
+}
+
+
+.divisao{
+    
+    display: flex;
+    width: 100%;  
+    justify-content: center;
+    
+}
+
+.divisao img{
+
+   width: 400px;
+   height: 20px;
+ 
+}
+
+.circulo{
+    
+    display: flex;
+    transform: translatey(30px);
+    background-color: var(--advice-dice-color);
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.circulo:hover{ background-color: hsl(150, 64%, 56%);; }
+
+.circulo img{
+
+    width: 30%;
+    height: 30%;
+    
+}
+
+@media (max-width: 375px){
+
+    body{
+
+        font-family: 'Manrope', sans-serif;
+        color: var(--text-color);
+        display: flex;
+        background-color: var(--background-color);
+        width: 375px;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .card{
+    
+       display: flex;
+       height: 300px;
+       width: 330px;    
+       flex-wrap: wrap;
+       border-radius: 20px;
+       justify-content: center;
+       gap: 2px;
+       padding: 2px;
+       background-color: var(--advice-card-color);
+       transform: translate(-10px);
+    }
+    
+    .text{
+    
+       display: flex;
+       flex-wrap: wrap;
+       transform: translatey(20px);
+       border-top-left-radius: 20px;
+       border-top-right-radius: 20px;
+       height: 200px;
+       text-align: center;
+       justify-content: center;
+    }
+    
+    .text h1{
+    
+        color: var(--advice-dice-color);
+        transform: translatey(20px);
+    }
+    
+    
+    .divisao{
+        
+        display: flex;
+        width: 100%;  
+        justify-content: center;
+        
+    }
+    
+    .divisao img{
+    
+       width: 200px;
+       height: 10px;
+     
+    }
+    
+    .circulo{
+        
+        display: flex;
+        transform: translatey(30px);
+        background-color: var(--advice-dice-color);
+        width: 70px;
+        height: 70px;
+        border-radius: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .circulo img{
+    
+        width: 40%;
+        height: 40%;
+        
+    }
+
+
+}
